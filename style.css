@@ -68,7 +68,6 @@ body {
 }
 
 .message-bubble {
-    max-width: 65%;
     padding: 12px 20px;
     border-radius: 28px;
     font-size: 16px;
@@ -85,7 +84,7 @@ body {
 }
 
 .user-message .message-bubble {
-    max-width: 65%;
+    max-width: max(65%, 300px);
     background-color: #282828;
     color: #ffffff;
     border-top-right-radius: 4px;
@@ -130,14 +129,14 @@ body {
 .ai-message::before {
     content: '';
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     background: #833AB4;
     background: linear-gradient(157deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     border-radius: 50%;
     margin-right: 16px;
     margin-top: 6px;
-    mask: radial-gradient(14px at 14px 14px,#0000 98%,#000) -14px -14px;
+    mask: radial-gradient(11px at 11px 11px,#0000 98%,#000) -11px -11px;
 
 }
 
